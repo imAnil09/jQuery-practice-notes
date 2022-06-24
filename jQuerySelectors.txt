@@ -1,0 +1,19 @@
+$("*") - All elements
+
+$(this) - Current element
+
+$("p.demo") - All <p> elements with class-"demo"
+
+$("ul li:first") - Selects the first <li> elements of the first <ul>
+
+$("ul li:first-child") - Selects the first <li> element of every <ul>
+
+$("[href]") - Selectsall elements with an href attribute
+
+$("a[target='_blank']") - Selects all <a> elements with a target attribute value equal to "_blank"
+
+$("a[target!='_blank']") - Selects all <a> elements with a target attribute value NOT equal to "_blank"
+
+$("tr:even") - Selects all even <tr> elements
+
+$("tr:odd") - Selects all odd <tr> elements
