@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="jquery-3.x-git.js"></script>
+    <script>
+      // This is to slideUP();
+      // $(document).ready(() => {
+      //   $("p").click(() => {
+      //     $(".expand").slideUp();
+      //   });
+      // });
+
+      //This is to slideDown();
+      //#make sure that you have to do display: "none"; in styling
+
+      // $(document).ready(() => {
+      //   $("p").click(() => {
+      //     $(".expand").slideDown();
+      //   });
+      // });
+
+      //This is slideToggle();
+
+      $(document).ready(() => {
+        $("div").click(() => {
+          $(".expand").slideToggle(1000);
+        });
+      });
+    </script>
+    <style>
+      .expand {
+        padding: 80px;
+        display: none;
+      }
+      .click,
+      .expand {
+        color: white;
+        text-transform: capitalize;
+        background-color: rgb(5, 176, 233);
+        text-align: center;
+        padding: 20px;
+      }
+
+      .click {
+        cursor: pointer;
+        border: 3px solid black;
+      }
+      .expand {
+        border: 2px solid black;
+      }
+
+      .middle {
+        width: 800px;
+        /* border: 20px; */
+      }
+
+      hr {
+        width: 620px;
+        padding: 0px;
+      }
+      h1 {
+        /* text-transform: uppercase; */
+        text-align: center;
+        color: darkslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>THE DEMONSTRATION OF "slideToggle()" using jQuery;</h1>
+    <h2>
+      <center>
+        <script>
+          document.write(Date(), "- Anil");
+        </script>
+      </center>
+    </h2>
+    <div class="click">click here to expansion</div>
+    <hr class="middle" />
+    <hr />
+
+    <div class="expand">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, aperiam
+      reprehenderit? Natus consequuntur dolorum eum, similique cupiditate magni
+      ducimus earum soluta saepe tempora explicabo labore sed. Laudantium quis
+      maiores aliquam!
+    </div>
+  </body>
+</html>

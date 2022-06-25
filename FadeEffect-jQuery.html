@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="jquery-3.x-git.js"></script>
+    <!-- <script src="jq_function.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#div4").fadeToggle(3000);
+          $("#div3").fadeToggle(2000);
+          $("#div2").fadeToggle(1000);
+          $("#div1").fadeToggle();
+        });
+      });
+    </script>
+
+    <style>
+      .box {
+        width: 140px;
+        height: 140px;
+        /* display: none; */
+        border: 10px solid rgb(107, 107, 109);
+        padding: 10px;
+        background-color: rgb(54, 37, 37);
+      }
+
+      div {
+        color: bisque;
+        font-family: Destruido;
+        font-size: 10rem;
+        display: inline-flex;
+        /* padding: 10px; */
+        margin: 10px 10px 0px 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: static;
+        /* padding-: 50%; */
+      }
+
+      button {
+        height: 40px;
+        width: 750px;
+        text-align: center;
+        color: bisque;
+        font-size: 20px;
+        line-height: 16px;
+        padding: 6px;
+        border-radius: 10px;
+        font-family: Georgia, serif;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: small-caps;
+        text-transform: none;
+        background-image: linear-gradient(
+          to right,
+          rgb(132, 139, 144) 0%,
+          rgb(45, 56, 62) 50%,
+          rgb(12, 121, 194) 100%
+        );
+        box-shadow: rgb(0, 0, 0) 5px 5px 25px 5px;
+        border: 2px solid rgb(28, 110, 164);
+        display: inline-block;
+      }
+      button:hover {
+        background: #1c6ea4;
+      }
+      /* button:active {
+        background: #144e75;
+      } */
+    </style>
+  </head>
+  <body>
+    <button>Fade Effect</button>
+    <br />
+    <div>
+      <div id="div4" class="box">A</div>
+      <div id="div3" class="box">N</div>
+      <div id="div2" class="box">I</div>
+      <div id="div1" class="box">L</div>
+    </div>
+  </body>
+</html>
